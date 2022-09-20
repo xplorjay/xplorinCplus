@@ -25,7 +25,65 @@ int main(){
     cout<<"Sum is: "<<x+y;
 }
 
-// Third program
+// Third program (Quotient and remainder)
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int x,y;
+    cout<<"Enter a dividend: ";
+    cin>>x;
+    cout<<"Enter a divisor: ";
+    cin>>y;
+    cout<<"The quotient is: "<<x/y<<endl;
+    cout<<"The remainder is: "<<x%y<<endl;
+
+}
+
+
+// Fourth program (odd/even)
+#include <iostream>
+
+using namespace std;
+
+int main(){
+   int n;
+   cout<<"Enter a number: ";
+   cin>>n;
+   if(n%2==0){
+       cout<<"Number is even";
+   }
+   else{
+        cout<<"number is odd";
+   }
+   
+}
+
+// 5th program (check vowel or consonant)
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    char c;
+    bool smallVowel, bigVowel;
+    cout<<"Enter an alphabet: ";
+    cin>>c;
+    smallVowel = (c=='a'|| c=='e'|| c=='i'|| c=='o'|| c=='u');
+    bigVowel = (c=='A'|| c=='E'|| c=='I'|| c=='O'|| c=='U');
+    if(!isalpha(c)){
+        cout<<"Invalid character!!!";
+    }
+    else if(smallVowel || bigVowel){
+        cout<<"The letter is a vowel";
+    }
+    else{
+        cout<<"The letter is a consonant";
+    }
+}
+
+
 
 
 
